@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "uv: sync",
+      "type": "shell",
+      "command": "uv sync",
+      "group": "build"
+    },
+    {
+      "label": "agentdev: run",
+      "type": "shell",
+      "command": "agentdev run main.py --port 8088",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

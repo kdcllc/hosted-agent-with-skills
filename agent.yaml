@@ -1,0 +1,27 @@
+name: blog-writer-agent
+description: >
+  A Microsoft Agent Framework hosted agent that uses a built-in skill to generate
+  technical blog drafts as markdown files.
+metadata:
+  authors:
+    - kdcllc
+  tags:
+    - Microsoft Agent Framework
+    - Hosted Agent
+    - Python
+    - Skill
+    - Blog Writer
+template:
+  name: blog-writer-agent
+  kind: hosted
+  protocols:
+    - protocol: responses
+  environment_variables:
+    - name: FOUNDRY_PROJECT_ENDPOINT
+      value: ${FOUNDRY_PROJECT_ENDPOINT}
+    - name: FOUNDRY_MODEL_DEPLOYMENT_NAME
+      value: ${FOUNDRY_MODEL_DEPLOYMENT_NAME}
+resources:
+  - kind: model
+    id: gpt-5.4-mini
+    name: chat

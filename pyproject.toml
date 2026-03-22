@@ -1,0 +1,24 @@
+[project]
+name = "hosted-agent-with-skills"
+version = "0.1.0"
+description = "Microsoft Agent Framework hosted agent with a built-in Python skill for Microsoft AI Foundry"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+  "agent-framework-core==1.0.0rc3",
+  "agent-framework-azure-ai==1.0.0rc3",
+  "azure-ai-agentserver-core==1.0.0b16",
+  "azure-ai-agentserver-agentframework==1.0.0b16",
+  "azure-ai-projects==2.0.0b4",
+  "azure-identity>=1.20.0",
+  "python-dotenv>=1.0.1",
+  "pyyaml>=6.0.2",
+]
+
+[tool.uv]
+package = false
+prerelease = "allow"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,12 @@
+schema: "1.0"
+version: "0.1.0"
+defaultEnvironment: dev
+environments:
+  dev:
+    projectEndpoint: "https://<your-account>.services.ai.azure.com/api/projects/<your-project>"
+    agentName: "blog-writer-agent"
+    azureContainerRegistry: "<your-acr-name>.azurecr.io"
+    testCases:
+      - name: "blog-smoke"
+        input: "Write a blog post about Microsoft AI Foundry hosted agents"
+        expectedContains: "Blog draft generated successfully"
