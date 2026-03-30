@@ -23,5 +23,5 @@ template:
       value: ${FOUNDRY_MODEL_DEPLOYMENT_NAME}
 resources:
   - kind: model
-    id: gpt-5.4-mini
+    id: gpt-4.1
     name: chat

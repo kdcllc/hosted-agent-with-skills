@@ -46,7 +46,7 @@ if not os.environ.get("IMAGE_URI"):
 project_endpoint = _require_env("FOUNDRY_PROJECT_ENDPOINT")
 agent_name = os.environ.get("AGENT_NAME", "blog-writer-agent")
 image_uri = _require_env("IMAGE_URI")
-model_name = os.environ.get("FOUNDRY_MODEL_DEPLOYMENT_NAME", "gpt-5.4-mini")
+model_name = os.environ.get("FOUNDRY_MODEL_DEPLOYMENT_NAME", "gpt-4.1")
 protocol_version = os.environ.get("HOSTED_AGENT_PROTOCOL_VERSION", "v1")
 hosted_cpu = os.environ.get("HOSTED_AGENT_CPU", "1")
 hosted_memory = os.environ.get("HOSTED_AGENT_MEMORY", "2Gi")
